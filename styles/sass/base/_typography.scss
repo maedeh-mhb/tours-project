@@ -1,0 +1,60 @@
+/* تعریف فونت ها */
+@font-face {
+    font-family: 'Vazir';
+    src: url('../../fonts/Vazirmatn-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ @font-face {
+    font-family: 'Vazir';
+    src: url('../../fonts/Vazirmatn-Bold\ \(3\).woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.primary-heading-top{
+    display: block;
+    font-size: $spacing-6xl;
+    letter-spacing: $spacing-sm;
+    font-weight: 400;
+    animation: moveInRight 3s; 
+}
+.primary-heading-bottom{
+    display: block;
+    font-size: $spacing-xxl;
+    letter-spacing: $spacing-xs;
+    font-weight: 400;
+    animation: moveInLeft 3s; 
+    margin-bottom: $spacing-sm;
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: 2;
+    animation-direction: alternate-reverse; */
+    /* animation-fill-mode: both; */
+}
+
+
+.secondary-heading {
+    font-size: $spacing-xl;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    &:hover {
+        transform: skewY(2deg) skewX(15deg);
+        text-shadow: .5rem 1rem 2rem rgba($color: #000000, $alpha: .2);
+    }
+}
+
+.heading-tertiary{
+    font-size: $spacing-xs1;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: $spacing-xs1;
+    &:not(:last-child){
+        margin-bottom: $spacing-lg;
+    }
+}
