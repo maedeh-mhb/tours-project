@@ -120,4 +120,47 @@
         font-weight: 100;
 
     }
+
+    //responsive design
+
+@media (max-width:56.25em) {
+    height: auto;
+
+    &__side{
+        height: auto;
+        position: relative;
+        &--back{
+            transform: rotateY(0);
+        }
     }
+    &:hover &__side--front{
+        transform: rotateY(0)
+    }
+
+
+    &__details {
+        padding: 1rem 3rem;
+    }
+    &__cta {
+        top: 0;
+        left: 0;
+        position: relative;
+        transform: translate(0);
+        padding: 7rem 4rem 4rem 4.5rem;
+        
+
+    }
+    &__price-box{
+        margin-bottom: $spacing-4xl;
+
+    }
+
+    &__price-value {
+        font-size:  4rem
+
+    }
+
+
+    }
+}
+

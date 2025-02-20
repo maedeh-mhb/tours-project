@@ -6,7 +6,13 @@ background-color: $color-white;
 border-radius: 3px;
 padding: $spacing-6xl;
 transform: skewX(-12deg);
-
+@include responsive (tab-por){
+    width: 100% !important;
+    padding: $spacing-4xl;
+}
+@include responsive (phone){
+    transform: skewX(0);
+}
 
 
 &__shape{
@@ -18,7 +24,15 @@ transform: skewX(-12deg);
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: skewX(12deg);
-position: relative;
+    position: relative;
+    @include responsive (tab-por){
+        margin-right: 3rem;
+       
+    }
+    @include responsive (phone){
+        transform: skewX(0);
+        transform: translateX(-3rem);
+    }
 }
 &__image {
     
@@ -30,6 +44,9 @@ position: relative;
     
     height: 100%;
     transform: skewX(12deg);
+    @include responsive (phone){
+        transform: skewX(0);
+    }
 }
 &__caption {
     position: absolute;

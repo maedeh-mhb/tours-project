@@ -19,6 +19,9 @@
     letter-spacing: $spacing-sm;
     font-weight: 400;
     animation: moveInRight 3s; 
+    @include responsive(phone){
+        font-size:  $spacing-4xl;
+    }
 }
 .primary-heading-bottom{
     display: block;
@@ -31,6 +34,12 @@
     /* animation-iteration-count: 2;
     animation-direction: alternate-reverse; */
     /* animation-fill-mode: both; */
+    @include responsive(phone){
+        font-size:  $spacing-xl;
+    }
+    @include responsive(tab-por){
+        font-size:  $spacing-lg;
+    }
 }
 
 

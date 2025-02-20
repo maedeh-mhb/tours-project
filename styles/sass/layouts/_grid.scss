@@ -1,18 +1,30 @@
 .row {
     max-width: $grid-width;
-    // background-color: #8c8686;
     margin: 0 auto;
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
 
     }
     @include clearfix;
+    @include responsive (tab-por){
+        max-width: 50rem;
+    }
+
     [class^='col-']{
-        // background-color: orange;
         float: left;
        &:not(:last-child) {
            margin-right: $gutter-horizontal;
+           @include responsive (tab-por){
+            margin-right: 0;
+            margin-bottom: $gutter-vertical-small;
+        }
+
        }
+       @include responsive (tab-por){
+        width: 100% !important;
+    }
+
     }
 
     .col-1-of-2 {

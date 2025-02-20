@@ -14,6 +14,14 @@
         display: block;
         width: 90%;
         border-bottom: 2px solid transparent;
+
+        @include responsive (tab-por){
+            width: 100% !important;
+        }
+        @include responsive (tab-land){
+            width: 100% !important;
+        }
+
         &:focus {
             outline: none;
             border-bottom: 2px solid $color-primary;

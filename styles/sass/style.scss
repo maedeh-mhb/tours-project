@@ -10,10 +10,11 @@
 
 @import 'pages/home';
 
-@import 'components/button';
-@import 'components/heading';
+
+
 
 @import 'layouts/header';
+@import 'layouts/grid';
 @import 'layouts/grid';
 
 @import 'components/composition';
@@ -22,7 +23,8 @@
 @import 'components/story';
 @import 'components/form';
 @import 'components/navigation';
-
+@import 'components/popup';
+@import 'components/button';
 
 
 

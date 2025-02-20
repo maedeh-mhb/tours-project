@@ -5,6 +5,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+   
     position: relative;
     &-text-box {
         color:$color-white;

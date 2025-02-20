@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <div class="navigation">
+    <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="nav-checkbox">
-        <label for="nav-checkbox" class="navigation__button">منو</label>
+        <label for="nav-checkbox" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
@@ -19,7 +21,7 @@
                 <li class="navigation__item"><a href="#" class="navigation__link">تماس با ما</a></li>
             </ul>
         </nav>
-    </div> -->
+    </div>
         <header class="header">
            <div class="header-logo-container">
             <img  src="images/logo.png" class="header-logo"/>
@@ -157,7 +159,7 @@
                                             <p class="card__price-only">فقط</p>
                                             <p class="card__price-value">500 هزار تومان</p>
                                         </div>
-                                        <a href="/" class="btn btn--white">الان رزرو کنید!</a>
+                                        <a href="#popup" class="btn btn--white">الان رزرو کنید!</a>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +191,7 @@
                                         <p class="card__price-only">فقط</p>
                                         <p class="card__price-value">1 میلیون    تومان</p>
                                     </div>
-                                    <a href="/" class="btn btn--white">الان رزرو کنید!</a>
+                                    <a href="#popup" class="btn btn--white">الان رزرو کنید!</a>
                             </div>
                             </div>
                         </div>
@@ -221,7 +223,7 @@
                                         <p class="card__price-only">فقط</p>
                                         <p class="card__price-value">500 هزار تومان</p>
                                     </div>
-                                    <a href="/" class="btn btn--white">الان رزرو کنید!</a>
+                                    <a href="#popup" class="btn btn--white">الان رزرو کنید!</a>
                             </div>
                             </div> 
                         </div>
@@ -335,6 +337,24 @@
 
             </section>
         </main>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                   
+                    <img src="../Natours/images/c1.jpg" alt="tour photo" class="popup__img">
+                    <img src="../Natours/images/c2.jpg" alt="tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="secondary-heading u-margin-bottom-medium">همین حالا رزرو کنید</h2>
+                    <p class="popup__text u-margin-bottom-medium">
+                        
+                        صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحا
+                    </p>
+                    <a href="#" class="btn btn--green">رزرو</a>
+                </div>
+            </div>
+        </div>
 
     <!-- <section class="grid">
         <div class="row">
